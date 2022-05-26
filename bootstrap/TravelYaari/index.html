@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- googleapis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Travel Yaari</title>
+  </head>
+  <body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-teal" id="main">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><i class="fa fa-plane-departure px-2"> </i> Travel Yaari</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-items px-3">
+              <a href="#" class="nav-links">Home</a>
+            </li>
+            <li class="navbar-items px-3">
+              <a href="#search" class="nav-links">Search</a>
+            </li>
+            <li class="navbar-items px-3">
+              <a href="#spot" class="nav-links">Visiting Spot</a>
+            </li>
+            <li class="navbar-items px-3">
+              <a href="#about" class="nav-links">About</a>
+            </li>
+            <li class="navbar-items px-3">
+              <a href="#places" class="nav-links">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- topgo aerrow -->
+   <div class="top">
+     <a href="#main" class="text-danger">
+    <i class="fa-solid fa-arrow-up fa-2x"></i>
+  </a>
+   </div>
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselBasicExample"
+      class="carousel slide carousel-fade"
+      data-mdb-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img
+            src="images/slider_one.jpg"
+            class="d-block w-100"
+            alt="Sunset Over the City"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <button class="btn btn-teal text-white">Read More</button>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            src="images/slider_two.jpg"
+            class="d-block w-100"
+            alt="Canyon at Nigh"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="btn btn-teal text-white">Read More</button>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            src="images/slider_three.jpg"
+            class="d-block w-100"
+            alt="Cliff Above a Stormy Sea"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+            <button class="btn btn-teal text-white">Read More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Search barr -->
+    <section class="p-3 ser" id="search">
+      <div class="text-center text-danger">
+        <h1>Search Your Destination</h1>
+      </div>
+      <div class="container">
+        <div class="input-group search">
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1">Search</label>
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- cards -->
+    <section id="spot">
+      <div class="container p-5">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card text-center py-4" style="width: 18rem">
+              <i class="fa fa-location-arrow fa-4x locatin"></i>
+              <div class="card-body">
+                <h2>Pick Up Location</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center py-4" style="width: 18rem">
+              <i class="fa fa-building fa-4x locatin"></i>
+              <div class="card-body">
+                <h2>Destination</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center py-4" style="width: 18rem">
+              <i class="fa fa-plane-departure fa-4x locatin"></i>
+              <div class="card-body">
+                <h2>Departure</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- placesss -->
+    <section class="bg-success p-3" id="places">
+      <div class="container">
+        <div class="row text-center text-white">
+          <h2><span class="text-warning">POPULAR </span><span> PLACES</span></h2>
+          <p>Search Your best palase Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam dolorum voluptate, maxime maiores perferendis.</p>
+        </div>
+        <div class="row ">
+          <div class="col-md-4 p-2">
+            <div class="card text-center py-4" style="width: 18rem">
+              <img src="images/card_1.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+              <div class="card-body">
+                <h2>Pick Up Location</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-2">
+            <div class="card text-center py-4" style="width: 18rem">
+              <img src="images/card_2.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+              <div class="card-body">
+                <h2>Pick Up Location</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-2">
+            <div class="card text-center py-4" style="width: 18rem">
+              <img src="images/card_3.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+              <div class="card-body">
+                <h2>Pick Up Location</h2>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-center p-2">
+        <button type="button" class="btn btn-dark border border-success"><i class="fa fa-play ">  </i> Start Booking</button>
+    </div>
+
+    
+    
+    </section>
+
+    <!-- follow-->
+    <section class="bg-teal" id="about">
+      <div class="container text-center text-white py-2">
+        <div class="row"><h1>Follow Travel Yaari</h1></div>
+        <div class="row"><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non atque! Corporis consequuntur minima quis laborum veniam hic omnis unde.</h6></div>
+        <div class="row"><i class="fa-brands fa-facebook fa-5x p-4"></i></div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+    ></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function(){
+        $('.carousel-inner').carousel({
+          interval : 1000;
+        })
+      })
+    </script>
+  </body>
+</html>

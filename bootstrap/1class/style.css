@@ -1,0 +1,16 @@
+.container-fluid .row {
+  background-color: brown;
+  padding: 20px;
+  margin: 0px;
+}
+.carousel-inner .carousel-item .w-100 {
+  width: 60% !important;
+  background-color: aquamarine;
+}
+.accordion-item {
+  background-color: rgb(17, 35, 190) !important;
+}
+.accordion {
+  background-color: cadetblue !important;
+  color: rgb(174, 209, 185) !important;
+}
