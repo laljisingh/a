@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+
+      p {
+        background-color: green;
+        color: white;
+      }
+      .divp{
+          box-shadow: 10px 5px 10px 10px black;
+          padding: 30px;
+      }
+    </style>
+    <script>
+      function fun() {
+        var div1 = document.getElementById("div1");
+        div1.innerText = "DOM Maniplation";
+        div1.style.backgroundColor = "black";
+        div1.style.color = "white";
+
+        var div = document.getElementById("h1");
+        div.innerText = "JavaScript";
+        div.style.backgroundColor = "green";
+
+        var div2 = document.getElementById("p2");
+        div2.innerText = "Javascript Code";
+        div2.style.backgroundColor = "cyan";
+        div2.style.color = "red";
+        div2.style.padding = "50px";
+      }
+      function placeH() {
+        var plc = document.getElementById("place");
+        plc.placeholder = "JavaScript";
+      }
+    </script>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h1 id="h1">HTML</h1>
+    <p id="div1">Tag concept</p>
+    <p id="p2">Html Code</p>
+    <button onclick="fun()">Click</button><br /><br /><br />
+<div class="divp">
+    <input type="text" id="place" placeholder="Enter Your name" />
+    <button
+      onclick="placeH()">Click</button>
+    
+    </div>  
+    </button>
+  </body>
+</html>

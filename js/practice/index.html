@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   "use strict";
+      //10 natural numbers
+      //   function natural() {
+      //     for (let i = 1; i < 11; i++) {
+      //       console.log(i);
+      //       document.write(i + "<br>");
+      //     }
+      //   }
+      //   natural();
+
+      //n natural number
+      //   var n = parseInt(prompt("Enter a number", "10"));
+      //   console.log("n natural number by users");
+      //   function Nnatural(n) {
+      //     for (let i = 1; i <= n; i++) {
+      //       console.log(i);
+      //       document.write(i + "<br>");
+      //     }
+      //   }
+      //   Nnatural(n);
+
+      //sum of natural number
+      // var s = parseInt(prompt("Enter a number", "10"));
+      // function sumNatural(n) {
+      //   let sum = 0;
+      //   for (let i = 1; i <= n; i++) {
+      //     sum = sum + i;
+      //     //   console.log(`sum = ${sum} `);
+      //   }
+      //   console.log("sum = " + sum);
+      // }
+
+      //formula of sum of natural number
+      //   let add = (s * (s + 1)) / 2;
+      //   console.log("sum = " + add);
+
+      // sumNatural(s);
+
+      //factorials of given number
+      // var s = parseInt(prompt("Enter a number", "10"));
+      // function sumNatural(n) {
+      //   let fact = 1;
+      //   for (let i = 1; i <= n; i++) {
+      //     if (i == 1) {
+      //       fact = 1;
+      //     } else {
+      //       fact = fact * i;
+      //       //   console.log(`sum = ${sum} `);
+      //     }
+      //   }
+      //   console.log("Factorials is => " + fact);
+      // }
+      // sumNatural(s);
+
+      //prime number or notttttttttttt
+
+      // let num = parseInt(prompt("Enter a number", "10"));
+
+      function prime(m) {
+        if (m <= 1) {
+          return false;
+        }
+
+        for (let i = 2; i <= m; i++) {
+          if (m % i == 0) {
+            return false;
+          }
+          return true;
+        }
+
+        // console.log(m + " is a prime number");
+      }
+
+      // prime(num);
+      //   ? console.log(num + " is a prime number")
+      //   : console.log(num + " is not a prime number");
+
+      prime number in a range
+      let num = parseInt(prompt("Enter a number", "10"));
+      function primeP(n) {
+        for (let i = 1; i < n; i++) {
+          if (prime(i)) {
+            console.log(i);
+          }
+        }
+      }
+
+      // primeP(num);
+    </script>
+  </body>
+</html>

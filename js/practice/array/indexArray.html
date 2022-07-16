@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        //   let a = [50, 10, 50, 10, 45];
+        //   let arr = new Array("hjsduis", 10, 50, 45, { name: "hjsduis", age: 10 });
+        //   for (let index = 0; index < arr.length; index++) {
+        //     console.log(a[index]);
+        //   }
+        //   console.log(arr.length);
+        //   console.log(a[3], a[1]);
+        let todo = [
+          "learn js",
+          "practice JS",
+          "Test JS",
+          "Show Result JS",
+          "Manage JS",
+        ];
+
+        let number = [
+          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 18, 20, 16, 17, 19, 21, 22, 23, 24,
+          25, 26, 27, 28, 29, 30,
+        ];
+        function evenarray(number) {
+          for (let index = 0; index < number.length; index++) {
+            if (number[index] % 2 == 0) {
+              console.log("Even-->" + number[index]);
+              console.log(index);
+            }
+          }
+        }
+        //   evenarray(number);
+        let address= ['name'=>'Lalji SIngh', 'age'=>'23', 'address'=>'Allahabad'];
+
+        function printAddress(address){
+          for (let index = 0; index < address.length; index++) {
+            console.log(address[index]);
+          }
+      }
+      printAddress(address);
+    </script>
+  </body>
+</html>

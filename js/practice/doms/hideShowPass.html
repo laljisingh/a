@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function password() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+          var b = document.getElementById("butt");
+          b.innerText = "Hide Password";
+        } else {
+          x.type = "password";
+          var b = document.getElementById("butt");
+          b.innerText = "Show Password";
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #23fc9da3;
+      }
+      .div1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .div2 {
+        padding-top: 100px;
+        width: 50%;
+        border: 2px solid black;
+        text-align: center;
+        margin: 0px auto;
+        box-shadow: 2px 5px 8px 5px rgb(94, 116, 94);
+        padding: 100px 10px;
+        background-image: url("https://thumbs.gfycat.com/BoilingThirdFoxhound-size_restricted.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
+      #password {
+        width: 200px;
+        height: 30px;
+        border: 2px solid rgb(255, 252, 252);
+        border-radius: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+
+        width: 50%;
+        background-color: rgba(20, 10, 15, 0.2);
+        color: aliceblue;
+      }
+      #butt {
+        background-color: rgb(18, 173, 135);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      p {
+        font-size: 30px;
+        color: rgb(233, 240, 240);
+        background-color: blueviolet;
+
+        border-radius: 50px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div class="div2">
+        <p>Hide And Show Password</p>
+        <input type="password" placeholder="Enter Password" id="password" />
+        <button onclick="password()" id="butt">Show Password</button>
+      </div>
+    </div>
+  </body>
+</html>
